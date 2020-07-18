@@ -1,0 +1,14 @@
+<suite name="All Test Suite">
+    <test name="Test1">
+        <parameter name="Email" value="delik@gmail.com"></parameter>
+        <parameter name="Username" value="Behruz"></parameter>
+        <parameter name="LastName" value="Jum'a"></parameter>
+        <parameter name="Domain" value="tutorialspoint.com"></parameter>
+        <parameter name="Name" value="BeXa"></parameter>
+        <classes>
+            <class name="Tests.Test1"/>
+            <class name="Tests.Test2">
+            </class>
+        </classes>
+    </test>
+</suite>
