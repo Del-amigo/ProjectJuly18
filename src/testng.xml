@@ -1,14 +1,44 @@
-<suite name="All Test Suite">
-    <test name="Test1">
+<suite name="All Test Suite" parallel = "tests" thread-count = "2">
+    <test name="TestContact">
+        <parameter name ="login_email" value="furkatkhalilov@gmail.com"></parameter>
+        <parameter name = "login_password" value="Hotspot12345"></parameter>
         <parameter name="Email" value="delik@gmail.com"></parameter>
         <parameter name="Username" value="Behruz"></parameter>
         <parameter name="LastName" value="Jum'a"></parameter>
+
+
+        <groups>
+            <run>
+                <include name = "smoke_test"></include>
+                <include name = "regression"></include>
+
+            </run>
+        </groups>
+
+
+
+        <classes>
+            <class name="Tests.TEST"> </class>
+        </classes>
+    </test>
+    <test name="TestDomain">
+        <parameter name ="login_email" value="furkatkhalilov@gmail.com"></parameter>
+        <parameter name = "login_password" value="Hotspot12345"></parameter>
         <parameter name="Domain" value="tutorialspoint.com"></parameter>
         <parameter name="Name" value="BeXa"></parameter>
+
+        <groups>
+            <run>
+                <include name = "smoke_test"></include>
+                <include name = "regression1"></include>
+
+            </run>
+        </groups>
+
+
+
         <classes>
-            <class name="Tests.Test1"/>
-            <class name="Tests.Test2">
-            </class>
+            <class name="Tests.TEST"> </class>
         </classes>
     </test>
 </suite>

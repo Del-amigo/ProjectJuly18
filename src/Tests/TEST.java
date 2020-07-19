@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Test3 extends BaseDriver {
+public class TEST extends BaseDriver {
 
     private Reusable_methods methods = new Reusable_methods(wait,driver);
 
@@ -22,7 +22,7 @@ public class Test3 extends BaseDriver {
     }*/
 
 
-    @Test(groups = {"regression"})
+    @org.testng.annotations.Test(groups = {"regression"})
     @Parameters({"Email","Username", "LastName"})
     void setContact(String account_email, String account_username, String account_lastname) {
 
@@ -62,7 +62,7 @@ public class Test3 extends BaseDriver {
 
     }
 
-    @Test(groups = {"regression1"})
+    @org.testng.annotations.Test(groups = {"regression1"})
     @Parameters({"Domain", "Name"})
     void setDomain(String domain, String name01) {
         WebElement contacts = driver.findElement( By.cssSelector( "a[id='nav-primary-contacts-branch'][data-tracking='click hover']" ) );
