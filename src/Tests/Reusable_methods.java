@@ -14,16 +14,12 @@ public class Reusable_methods extends BaseDriver  {
     private WebDriver driver;
 
 
-
-
     public Reusable_methods(WebDriverWait wait, WebDriver driver) {
 
         this.wait = wait;
         this.driver = driver;
 
     }
-
-
 
     public void login001(String login_email, String login_password) {
         By emailinput = By.id("username");
@@ -63,9 +59,5 @@ public class Reusable_methods extends BaseDriver  {
 
         driver.quit();
     }
-
-
-
-
 
 }
